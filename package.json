@@ -1,0 +1,23 @@
+{
+  "name": "weatherapp-nodejs-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenullterminator/WeatherApp-nodejs-.git"
+  },
+  "author": "Dhairya Patel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thenullterminator/WeatherApp-nodejs-/issues"
+  },
+  "homepage": "https://github.com/thenullterminator/WeatherApp-nodejs-#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "yargs": "^13.2.4"
+  }
+}
