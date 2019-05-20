@@ -12,16 +12,16 @@ var geocodeadd=(address,callback)=>
         {
             callback("Unable to connect to google servers.");
         }
-        else if(body.status==="ZERO_RESULTS")
+        else if(body.length===0)
         {
             callback("Unable to find that address");
         }
-        else if(body.status==="OK")
+        else 
         {
         callback(undefined,{
-        Address:body.results[0].formatted_address,
-        Latitude:body.results[0].geometry.location.lat,
-        Longitude:body.results[0].geometry.location.lng
+        Address:body[0].display_name,
+        Latitude:body[0].lat,
+        Longitude:body[0].lon
         });
         }
     });

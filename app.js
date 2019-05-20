@@ -24,7 +24,7 @@ geocode.geocodeadd(arg.address,(error,results)=>{
     }
     else
     {
-        console.log(JSON.stringify(results));
+        console.log(JSON.stringify(results,undefined,2));
     }
 
 });
