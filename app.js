@@ -1,6 +1,9 @@
 console.log("Starting weather App");
+
 const yargs=require("yargs");
 const geocode=require("./geocode/geocode")
+
+
 var arg=yargs
 .options({
     address:{
@@ -15,7 +18,6 @@ var arg=yargs
 .argv;
 
 geocode.geocodeadd(arg.address,(error,results)=>{
-
     if(error)
     {
         console.log(error);
@@ -27,4 +29,4 @@ geocode.geocodeadd(arg.address,(error,results)=>{
 
 });
 
-console.log(arg.address);
+

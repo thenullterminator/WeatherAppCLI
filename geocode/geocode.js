@@ -1,10 +1,12 @@
 const request=require("request");
 var geocodeadd=(address,callback)=>
 {
-    request({
-        url:`https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(arg.address)}&key=AIzaSyAqnvDCAo8lqcKO6OyFsOo_Tu2hdtCSjRY`,
+    request(
+    {
+        url:`https://nominatim.openstreetmap.org/search/${encodeURIComponent(address)}?format=json&email=iit2018122@iiita.ac.in&addressdetails=1&limit=1`,
         json:true
-    },(error,response,body)=>
+    },
+    (error,response,body)=>
     {
         if(error)
         {
@@ -24,6 +26,7 @@ var geocodeadd=(address,callback)=>
         }
     });
 };
+
 
 module.exports={
     geocodeadd:geocodeadd
