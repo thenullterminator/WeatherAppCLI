@@ -32,9 +32,7 @@ geocode.geocodeadd(arg.address,(error,results)=>{
         {
             console.log(JSON.stringify(weather,undefined,2));
         });
-
     }
-
 });
 
 
